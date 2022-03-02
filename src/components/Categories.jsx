@@ -3,13 +3,20 @@ import styledComponents from 'styled-components'
 
 // 🥒js52
 import { data_categories } from '../data'
+
 import CategoryItem from './CategoryItem'
+
+import { mobile_786 } from '../responsive'
+
 
 
 const Container = styledComponents.div`
     display: flex;
     padding: 20px;
     justify-content: space-between;
+
+    ${mobile_786({ padding: "0px", flexDirection:"column" })}
+
 `;
 
 

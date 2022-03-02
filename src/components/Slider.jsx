@@ -7,12 +7,10 @@ import { ArrowLeftOutlined, ArrowRightOutlined } from '@mui/icons-material'
 import React, { useState } from 'react'
 import styled from "styled-components";
 
-
 // js28.
 import {data_sliderItems} from '../data.js'
 
-
-
+import { mobile_786 } from '../responsive.js';
 
 const Container = styled.div`
   width: 100%;
@@ -20,6 +18,8 @@ const Container = styled.div`
   display: flex;
   position: relative;
   overflow: hidden;
+
+  ${mobile_786({ display: "none" })}
 `;
 
 // 

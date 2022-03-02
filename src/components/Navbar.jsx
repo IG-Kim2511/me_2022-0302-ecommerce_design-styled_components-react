@@ -27,6 +27,9 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 
+${mobile_786({ padding: "10px 0px" })}
+
+
 `;
 
 const Left = styledComponents.div`
@@ -39,6 +42,9 @@ align-items: center;
 const Language = styledComponents.span`
 font-size: 14px;
 cursor: pointer;
+
+${mobile_786({ display: "none" })}
+
 `;
 
 const SearchContainer = styledComponents.div`
@@ -53,6 +59,7 @@ padding: 5px;
 const Input = styledComponents.input`
 border: none;
 
+${mobile_786({ width: "50px" })}
 
 `;
 
@@ -65,6 +72,7 @@ text-align: center;
 const Logo = styledComponents.div`
 font-weight: bold;
 
+${mobile_786({ fontSize: "24px" })}
 
 `;
 
@@ -80,6 +88,8 @@ const MenuItem = styledComponents.div`
 font-size: 14px;
 cursor: pointer;
 margin-left: 25px;
+
+${mobile_786({ fontSize: "12px", marginLeft: "10px" })}
 
 `;
 

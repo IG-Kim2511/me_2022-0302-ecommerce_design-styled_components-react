@@ -3,7 +3,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 
-
+// 🍀css30.mixin문법
 const Info = styled.div`
   opacity: 0;
   width: 100%;
@@ -31,7 +31,7 @@ const Container = styled.div`
   background-color: #f5fbfd;
   position: relative;
 
-//   🧨
+//   🧨css30.
   &:hover ${Info}{
     opacity: 1;
   }
@@ -62,7 +62,7 @@ const Icon = styled.div`
   margin: 10px;
   transition: all 0.5s ease;
 
-//  🧨
+//  🧨css30.
   &:hover {
     background-color: #e9f5f5;
     transform: scale(1.1);
