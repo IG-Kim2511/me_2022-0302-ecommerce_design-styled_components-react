@@ -3,31 +3,88 @@ import React from 'react'
 import styledComponents from 'styled-components'
 
 import Badge from '@mui/material/Badge';
-import MailIcon from '@mui/icons-material/Mail';
-
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import SearchIcon from '@mui/icons-material/Search';
 
-const Container = styledComponents.div``;
-const Wraper = styledComponents.div``;
-const Left = styledComponents.div``;
-const Language = styledComponents.div``;
-const SearchContainer = styledComponents.div``;
-const Search = styledComponents.div``;
-const Center = styledComponents.div``;
-const Logo = styledComponents.div``;
-const Right = styledComponents.div``;
-const MenuItem = styledComponents.div``;
+import './Navbar.css'
+
+const Container = styledComponents.div`
+  height:60px;
+  
+`;
+
+const Wraper = styledComponents.div`
+
+padding: 10px 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+`;
+
+const Left = styledComponents.div`
+
+flex: 1;
+display: flex;
+align-items: center;
+`;
+
+const Language = styledComponents.span`
+font-size: 14px;
+cursor: pointer;
+`;
+
+const SearchContainer = styledComponents.div`
+border: 0.5px solid lightgray;
+display: flex;
+align-items: center;
+margin-left: 25px;
+padding: 5px;
+`;
+
+const Input = styledComponents.input`
+border: none;
+
+
+`;
+
+const Center = styledComponents.div`
+flex: 1;
+text-align: center;
+
+`;
+
+const Logo = styledComponents.div`
+font-weight: bold;
+
+
+`;
+
+const Right = styledComponents.div`
+
+flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+`;
+
+const MenuItem = styledComponents.div`
+font-size: 14px;
+cursor: pointer;
+margin-left: 25px;
+
+`;
 
 
 const Navbar = () => {
   return (
-    <Container>
+    <Container className='test'>
       <Wraper>
         <Left>
           <Language>
             <SearchContainer>
-              <input placeholder='Search'/>
-              <Search></Search>
+              <Input placeholder='Search'/>
+              <SearchIcon/>
             
             </SearchContainer>
           </Language>
