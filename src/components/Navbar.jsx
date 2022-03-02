@@ -103,6 +103,7 @@ const Navbar = () => {
           <MenuItem></MenuItem>
           <MenuItem>
 
+          {/* 🍀 Badge */}
             <Badge badgeContent={4} color="primary">
               <ShoppingCartIcon color="action" />
             </Badge>

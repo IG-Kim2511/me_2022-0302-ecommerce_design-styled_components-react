@@ -1,4 +1,7 @@
-export const sliderItems = [
+
+
+// 🍖slider.jsx
+export const data_sliderItems = [
     {
       id: 1,
       img: "https://i.ibb.co/XsdmR2c/1.png",
@@ -22,7 +25,7 @@ export const sliderItems = [
     },
   ];
 
-  export const categories = [
+  export const data_categories = [
     {
       id: 1,
       img: "https://images.pexels.com/photos/5886041/pexels-photo-5886041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
@@ -40,7 +43,7 @@ export const sliderItems = [
     },
   ];
 
-  export const popularProducts = [
+  export const data_popularProducts = [
     {
       id:1,
       img:"https://d3o2e4jr3mxnm3.cloudfront.net/Mens-Jake-Guitar-Vintage-Crusher-Tee_68382_1_lg.png",
