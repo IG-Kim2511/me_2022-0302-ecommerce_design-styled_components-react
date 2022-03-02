@@ -274,4 +274,6 @@ media query
   scroll-behavior: smooth;
 
   font-family: 'Josefin Sans';
+
+  transition: all ease 0.3s;
 }

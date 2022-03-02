@@ -6,10 +6,17 @@ import Badge from '@mui/material/Badge';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import SearchIcon from '@mui/icons-material/Search';
 
+// 🧨js237
+import { mobile_786 } from '../responsive.js'
+
+
 import './Navbar.css'
 
 const Container = styledComponents.div`
   height:60px;
+
+  /* 🧨js237 */
+  ${mobile_786({ height: "50px"})}
   
 `;
 

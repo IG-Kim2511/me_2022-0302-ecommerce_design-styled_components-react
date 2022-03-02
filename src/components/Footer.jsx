@@ -93,7 +93,7 @@ const Footer = () => {
 
         {/* 🍀js126 . props : color
         
-          <Arrow>안의 모든 것들이 props로 넘어감.
+          <SocialIcon>안의 모든 것들이 props로 넘어감.
 
           넘어온 props들중 이름이 p_color인 것 호출
 
@@ -101,16 +101,16 @@ const Footer = () => {
 
         <SocialContainer>
             <SocialIcon p_color="3B5999">
-            <Facebook />
+                <Facebook />
             </SocialIcon>
             <SocialIcon p_color="E4405F">
-            <Instagram />
+              <Instagram />
             </SocialIcon>
             <SocialIcon p_color="55ACEE">
-            <Twitter />
+              <Twitter />
             </SocialIcon>
             <SocialIcon p_color="E60023">
-            <Pinterest />
+              <Pinterest />
             </SocialIcon>
         </SocialContainer>
     
