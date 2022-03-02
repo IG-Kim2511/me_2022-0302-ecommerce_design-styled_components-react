@@ -42,6 +42,7 @@ margin-left: 25px;
 padding: 5px;
 `;
 
+// 🦄input에 styled-components
 const Input = styledComponents.input`
 border: none;
 
@@ -78,6 +79,8 @@ margin-left: 25px;
 
 const Navbar = () => {
   return (
+
+    /* 🦄 styled-components에도 css중첩적용 가능 */
     <Container className='test'>
       <Wraper>
         <Left>
