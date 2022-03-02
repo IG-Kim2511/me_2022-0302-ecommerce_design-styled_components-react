@@ -103,6 +103,17 @@ const Slider = () => {
     const [slideIndex, setSlideIndex] = useState(0);
 
     // 🍀js49 
+    /* 
+    left click + slideIndex 1 , 2 ? --> slideIndex -1
+
+    left click + slideIndex 0, -1 ? --> slideIndex 2
+
+
+    right click + slideIndex -1,  0, 1 ? --> slideIndex +1
+
+    right click + slideIndex 2 ? --> slideIndex  0 
+
+    */
     const handleClick = (p_direction)=>{
 
         if (p_direction === "left") {
@@ -154,6 +165,8 @@ const Slider = () => {
                     </Slide>
                 ))
             }        
+            
+
         </Wrapper>        
      
      
