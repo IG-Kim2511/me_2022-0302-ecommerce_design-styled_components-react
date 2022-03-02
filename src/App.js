@@ -5,6 +5,8 @@ import Login from './pages/Login.jsx'
 
 import './App.css';
 import Cart from './pages/Cart.jsx';
+import ProductsList from './pages/ProductsList.jsx';
+import ProductPage from './pages/ProductPage.jsx';
 
 
 
@@ -13,12 +15,13 @@ function App() {
     <div className="App">
       {/* <Home/> 
         <Login/>
-      ProductList
-      Register
+        <Cart/>
+        <ProductsList/>
+     
       
       */}
-      <Cart/>
-      
+     
+      <ProductPage/>
     </div>
   );
 }
