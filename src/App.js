@@ -14,16 +14,20 @@ import Register from './pages/Register.jsx';
 function App() {
   return (
     <div className="App">
-      {/* <Home/> 
+      {/* 
+        여러개의 페이지... 나중에 router로 모두 통합할 생각
+
         <Login/>
-        <Cart/>
-        <ProductsList/>
+        <Register/>
      
+        <Cart/>
+        <ProductsList/>     
         <ProductPage/>
       
       */}
 
-      <Register/>
+      <Home/> 
+
      
     </div>
   );
