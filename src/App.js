@@ -7,6 +7,7 @@ import './App.css';
 import Cart from './pages/Cart.jsx';
 import ProductsList from './pages/ProductsList.jsx';
 import ProductPage from './pages/ProductPage.jsx';
+import Register from './pages/Register.jsx';
 
 
 
@@ -18,10 +19,12 @@ function App() {
         <Cart/>
         <ProductsList/>
      
+        <ProductPage/>
       
       */}
+
+      <Register/>
      
-      <ProductPage/>
     </div>
   );
 }
