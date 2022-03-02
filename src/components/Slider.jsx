@@ -35,7 +35,7 @@ const Arrow = styled.div`
   top: 0;
   bottom: 0;
 
-//   🥒js49
+//   🧨js49,  🧨js50
   left: ${(props) => props.p_direction === "left" && "10px"};
   right: ${(props) => props.p_direction === "right" && "10px"};
   margin: auto;
@@ -49,7 +49,7 @@ const Wrapper = styled.div`
   display: flex;
   transition: all 1.5s ease;
 
-//   🥒js48
+//   🧨js48
   transform: translateX(${(props) => props.p_slideIndex * -100}vw);
 `;
 
@@ -60,7 +60,7 @@ const Slide = styled.div`
     display: flex;
     align-items: center;
 
-// 🥒js48
+// 🧨js48
   background-color: #${(props) => props.p_bg};
 `;
 
@@ -103,6 +103,7 @@ const Slider = () => {
     const [slideIndex, setSlideIndex] = useState(0);
 
     // 🍀js49 
+  
     /* 
     left click + slideIndex 1 , 2 ? --> slideIndex -1
 
@@ -129,7 +130,15 @@ const Slider = () => {
   return (
     <Container>
         
-        {/* 🥒js49 */}
+        {/* 🧨js49 */}
+
+        {/* 🍀js50 . props
+          <Arrow>안의 모든 것들이 props로 넘어감.
+
+          넘어온 props들중 이름이 p_direction인 것 호출
+
+          props이름 left와 같으면 left 10px        
+        */}
 
         <Arrow p_direction="left" onClick={() => handleClick("left")}>
             <ArrowLeftOutlined />
@@ -141,9 +150,9 @@ const Slider = () => {
 
 
 
-        {/* 🥒js48 */}
+        {/* 🧨js48 */}
         <Wrapper p_slideIndex = {slideIndex}>
-        {/*🍀js28. map  🥒data.js */}
+        {/*🍀js28. map  🧨data.js */}
         {/*🍀js46.  p_bg: props의미함. styled-components로 보냄 */}
 
             {
