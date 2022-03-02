@@ -16,7 +16,7 @@ const Categories = () => {
     <Container>
     {
         data_categories.map((p_item)=>(
-            <CategoryItem/>
+            <CategoryItem p_item={p_item}/>
         ))
     }
 
