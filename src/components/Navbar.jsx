@@ -71,7 +71,7 @@ ${mobile_786({ width: "50px" })}
 `;
 
 const Center = styledComponents.div`
-flex: 1;
+flex: 3;
 text-align: center;
 
 `;
@@ -117,14 +117,14 @@ const Navbar = () => {
           </Language>
         </Left>
 
-        <Logo>IG</Logo>
-        <Center>
-          <Link to="/">Home</Link>
-          <Link to="Login">Login</Link>
-          <Link to="Register">Register</Link>
-          <Link to="Cart">Cart</Link>
-          <Link to="ProductsList">ProductsList</Link>
-          <Link to="ProductPage">ProductPage</Link>
+        <Center className='nav-router'>
+          
+          <span> <Link className='link' to="/">Home</Link>  </span>
+          <span> <Link className='link' to="Login">Login</Link></span>
+          <span> <Link className='link' to="Register">Register</Link> </span>
+          <span> <Link className='link' to="Cart">Cart</Link> </span>
+          <span> <Link className='link' to="ProductsList">ProductsList</Link> </span>
+          <span> <Link className='link' to="ProductPage">ProductPage</Link>  </span> 
         </Center>
       
         

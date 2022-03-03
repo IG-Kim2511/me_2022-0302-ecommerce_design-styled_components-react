@@ -9,6 +9,7 @@ import ProductsList from './pages/ProductsList.jsx';
 import ProductPage from './pages/ProductPage.jsx';
 import Register from './pages/Register.jsx';
 import { Link, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar.jsx';
 
 
 
@@ -16,22 +17,18 @@ import { Link, Route, Routes } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-      {/* 
-        여러개의 페이지... 나중에 router로 모두 통합할 생각
-      <Home/> 
-        <Login/>
-        <Register/>
-     
-        <Cart/>
-        <ProductsList/>     
-        <ProductPage/>
-      
  
-   
-      */}
+
+      <Navbar/>
       
-      <Home/>    
-      
+      <Routes>
+          <Route path="/" element={<Home/>}></Route>
+          <Route path="/cart" element={<Cart />}/>
+          <Route path="/Login" element={<Login />}></Route>
+          <Route path="/ProductPage" element={<ProductPage />}></Route>
+          <Route path="/ProductsList" element={<ProductsList />}></Route>
+          <Route path="/Register" element={<Register />}></Route>
+      </Routes>
 
      
     </div>

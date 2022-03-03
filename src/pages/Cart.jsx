@@ -173,7 +173,7 @@ const Cart = () => {
   return (
     
     <Container>
-      <Navbar/>
+      {/* <Navbar/> */}
 
       <Announcement/>
 

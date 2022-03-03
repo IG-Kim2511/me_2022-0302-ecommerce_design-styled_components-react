@@ -125,7 +125,7 @@ const ProductPage = () => {
   return (
     <Container>
 
-      <Navbar/>
+      {/* <Navbar/> */}
 
       <Announcement/>
 

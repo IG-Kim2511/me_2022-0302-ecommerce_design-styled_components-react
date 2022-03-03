@@ -68,7 +68,7 @@ const Login = () => {
   return (
     <div>
     
-    <Navbar/>
+    {/* <Navbar/> */}
     
       <Container>
 

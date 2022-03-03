@@ -63,7 +63,7 @@ const Button = styled.button`
 const Register = () => {
   return (
     <div>
-      <Navbar/>
+      {/* <Navbar/> */}
     
       <Container>
           <Wrapper>
