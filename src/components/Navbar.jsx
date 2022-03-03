@@ -15,6 +15,12 @@ import './Navbar.css'
 const Container = styledComponents.div`
   height:60px;
 
+  position:sticky;
+  top:0;
+  
+
+  z-index:10;
+
   /* 🧨js237 */
   ${mobile_786({ height: "50px"})}
   
