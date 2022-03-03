@@ -8,7 +8,7 @@ import Cart from './pages/Cart.jsx';
 import ProductsList from './pages/ProductsList.jsx';
 import ProductPage from './pages/ProductPage.jsx';
 import Register from './pages/Register.jsx';
-import { Link, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar.jsx';
 
 
@@ -20,7 +20,7 @@ function App() {
  
 
       <Navbar/>
-      
+
       <Routes>
           <Route path="/" element={<Home/>}></Route>
           <Route path="/cart" element={<Cart />}/>
