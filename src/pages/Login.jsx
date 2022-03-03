@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import Navbar from '../components/Navbar';
 import { mobile_786 } from '../responsive'
 
 
@@ -65,27 +66,32 @@ const Link = styled.a`
 
 const Login = () => {
   return (
-    <Container>
+    <div>
+    
+    <Navbar/>
+    
+      <Container>
 
-    <Wrapper>
+        <Wrapper>
 
-      <Title>SIGN IN</Title>
+          <Title>SIGN IN</Title>
 
-      <Form>
+          <Form>
 
-        <Input placeholder="username" />
-        
-        <Input placeholder="password" />
+            <Input placeholder="username" />
+            
+            <Input placeholder="password" />
 
-        <Button>LOGIN</Button>
+            <Button>LOGIN</Button>
 
-        <Link>DO NOT YOU REMEMBER THE PASSWORD?</Link>
+            <Link>DO NOT YOU REMEMBER THE PASSWORD?</Link>
 
-        <Link>CREATE A NEW ACCOUNT</Link>
+            <Link>CREATE A NEW ACCOUNT</Link>
 
-      </Form>
-    </Wrapper>
-  </Container>
+          </Form>
+        </Wrapper>
+      </Container>
+  </div>
   )
 }
 

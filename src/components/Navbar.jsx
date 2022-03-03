@@ -11,6 +11,7 @@ import { mobile_786 } from '../responsive.js'
 
 
 import './Navbar.css'
+import { Link } from 'react-router-dom';
 
 const Container = styledComponents.div`
   height:60px;
@@ -116,8 +117,14 @@ const Navbar = () => {
           </Language>
         </Left>
 
+        <Logo>IG</Logo>
         <Center>
-          <Logo>IG</Logo>
+          <Link to="/">Home</Link>
+          <Link to="Login">Login</Link>
+          <Link to="Register">Register</Link>
+          <Link to="Cart">Cart</Link>
+          <Link to="ProductsList">ProductsList</Link>
+          <Link to="ProductPage">ProductPage</Link>
         </Center>
       
         
